@@ -105,42 +105,11 @@
       "type": "featured-section",
       "settings": {}
     },
-    "aed90938-513f-4614-b808-765ae62cef77": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--20498569396503__3625e9e3-cd62-4a99-a102-34a982080237-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>SUITABLE FOR ALL TYPES OF HEARING LOSS</strong>",
-            "heading_size": "h2"
-          }
-        },
-        "template--20498569396503__3625e9e3-cd62-4a99-a102-34a982080237-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Perfect for individuals with varying levels of hearing loss. They're equipped with<strong> 3 custom programs</strong> <strong>and improved sound quality,</strong> ensuring they meet your specific hearing needs.<br/><br/><strong>1. Normal mode</strong> - Ideal for TV and everyday conversations.</p><p><strong>2. Noise Reduction Mode</strong> - Designed for lively settings like parties, planes, and active pursuits.</p><p><strong>3. Outdoor mode</strong> - Tailored for sound-sensitive individuals or noisy environments.<br/><br/><br/><br/><em>I can't believe my luck in finding these incredible hearing aids! It's like hitting the jackpot.<br/></em><br/><strong>M. Smith </strong></p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "template--20498569396503__3625e9e3-cd62-4a99-a102-34a982080237-heading-1",
-        "template--20498569396503__3625e9e3-cd62-4a99-a102-34a982080237-text-1"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Image.png",
-        "height": "small",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 44,
-        "padding_bottom": 36
-      }
+    "image-with-txt": {
+      "type": "image-with-txt",
+      "blocks": {},
+
+      "settings": {}
     },
     "7cae1a89-5712-414f-8e61-e344e2b65232": {
       "type": "image-with-text-second",
@@ -330,7 +299,7 @@
     "main",
     "related-products",
     "featured",
-    "aed90938-513f-4614-b808-765ae62cef77",
+    "image-with-txt",
     "7cae1a89-5712-414f-8e61-e344e2b65232",
     "99df6994-e5a8-407d-9718-2dfd2d9d616e",
     "c2d28d03-bc0a-43b8-b7c9-9974a1ba4f76",

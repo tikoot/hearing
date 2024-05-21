@@ -1,0 +1,120 @@
+{{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+.section-{{ section.id }}{
+    margin-bottom:32px;
+}
+  .section-{{ section.id }}-padding {
+    /* padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px; */
+    
+  }
+
+  .quote-wrap{
+    border-top: 1px solid #CCE2E8;
+    padding-top:32px;
+  margin-top:32px;
+  }
+
+    .quote-wrap div{
+        display:flex;
+        align-items:flex-start;
+        gap:20px;
+
+    }
+
+       .quote-wrap div img{
+      margin-top:6px;
+        
+    }
+
+     .quote-wrap div p{
+font-style:italic;
+
+        
+    }
+
+         .quote-wrap strong{
+padding-left:38px;
+        
+    }
+
+
+  .image-with-text__grid {
+     border-radius: 32px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      /* padding-top: 64px;
+      padding-bottom: 54px; */
+    }
+  }
+
+.image-with-text__content > :first-child:is(.image-with-text__heading) {
+    font-size:32px;
+    margin-bottom:32px;
+  }
+ /* .image-with-text .grid {
+     padding: 85px 48px; 
+     border-radius: 32px;
+  } */
+
+  .image-with-text__text p:first-child strong:first-child,
+  .image-with-text__text p:first-child strong:nth-child(2){
+color:#036788
+  }
+
+  .image-with-text__media {
+    border:none;
+  }
+
+  .image-with-text{
+    margin-bottom:32px;
+    border-radius:32px;
+  }
+ 
+
+{%- endstyle -%}
+
+<div class="isolate">
+  <div class="rich-text content-container color-background-1 gradient rich-text--full-width content-container--full-width section-template--20498569396503__da214b1e-b497-4bfa-87ea-a347335f3f8e-padding">
+    <div class="rich-text__wrapper rich-text__wrapper--center page-width">
+      <div class="rich-text__blocks center"><h2 class="rich-text__heading rte inline-richtext h1" style="font-style:700; padding:60px 0;">Why Are CLARI Hearing™ Aids the Preferred Choice <br> for Over 50,000 Satisfied Customers?</h2></div>
+    </div>
+  </div>
+</div>
+
+<div class="image-with-text image-with-text--no-overlap page-width isolate section-template--22492572680471__7cae1a89-5712-414f-8e61-e344e2b65232-padding">
+    <div class="image-with-text__grid grid grid--gapless grid--1-col grid--2-col-tablet">
+      <div class="image-with-text__text-item grid__item">
+      <section id="ImageWithText--template--22492572680471__aed90938-513f-4614-b808-765ae62cef77" class="image-with-text__content image-with-text__content--top image-with-text__content--desktop-left image-with-text__content--mobile-left image-with-text__content--small gradient color-background-1 content-container"><h2 class="image-with-text__heading inline-richtext h2">
+                <strong>Suitable for All Types of Hearing Loss</strong>
+              </h2><div class="image-with-text__text rte body">
+                <p>Perfect for individuals with varying levels of hearing loss. They're equipped with<strong> 3 custom programs</strong> <strong>and improved sound quality,</strong> ensuring they meet your specific hearing needs.<br><br><strong>1. Normal mode</strong> - Ideal for TV and everyday conversations.</p><p><strong>2. Noise Reduction Mode</strong> - Designed for lively settings like parties, planes, and active pursuits.</p><p><strong>3. Outdoor mode</strong> - Tailored for sound-sensitive individuals or noisy environments.</p>
+
+                <div class="quote-wrap">
+
+                <div><img src="//fe807f.myshopify.com/cdn/shop/t/12/assets/cssc.png?v=175773302209369563221715159822" style="border:none"/>
+                                        {% comment %} <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.6875 7.875V17.5C12.6861 18.8919 12.1325 20.2265 11.1482 21.2107C10.164 22.195 8.82944 22.7486 7.4375 22.75C7.20544 22.75 6.98288 22.6578 6.81878 22.4937C6.65469 22.3296 6.5625 22.1071 6.5625 21.875C6.5625 21.6429 6.65469 21.4204 6.81878 21.2563C6.98288 21.0922 7.20544 21 7.4375 21C8.36576 21 9.256 20.6313 9.91237 19.9749C10.5688 19.3185 10.9375 18.4283 10.9375 17.5V16.625H4.375C3.91087 16.625 3.46575 16.4406 3.13756 16.1124C2.80937 15.7842 2.625 15.3391 2.625 14.875V7.875C2.625 7.41087 2.80937 6.96575 3.13756 6.63756C3.46575 6.30937 3.91087 6.125 4.375 6.125H10.9375C11.4016 6.125 11.8467 6.30937 12.1749 6.63756C12.5031 6.96575 12.6875 7.41087 12.6875 7.875ZM23.625 6.125H17.0625C16.5984 6.125 16.1533 6.30937 15.8251 6.63756C15.4969 6.96575 15.3125 7.41087 15.3125 7.875V14.875C15.3125 15.3391 15.4969 15.7842 15.8251 16.1124C16.1533 16.4406 16.5984 16.625 17.0625 16.625H23.625V17.5C23.625 18.4283 23.2563 19.3185 22.5999 19.9749C21.9435 20.6313 21.0533 21 20.125 21C19.8929 21 19.6704 21.0922 19.5063 21.2563C19.3422 21.4204 19.25 21.6429 19.25 21.875C19.25 22.1071 19.3422 22.3296 19.5063 22.4937C19.6704 22.6578 19.8929 22.75 20.125 22.75C21.5169 22.7486 22.8515 22.195 23.8357 21.2107C24.82 20.2265 25.3736 18.8919 25.375 17.5V7.875C25.375 7.41087 25.1906 6.96575 24.8624 6.63756C24.5342 6.30937 24.0891 6.125 23.625 6.125Z" fill="#036788"/>
+</svg>  {% endcomment %}
+    <p>
+                        I can't believe my luck in finding these incredible hearing aids! It's like hitting the jackpot. </p>
+                </div>
+
+                <strong>M. Smith </strong>
+                </div>
+              
+              </div></section>
+    </div>
+    <div class="image-with-text__media-item image-with-text__media-item--medium image-with-text__media-item--top grid__item">
+      <div class="image-with-text__media image-with-text__media--small gradient color-background-1 global-media-settings media"><img src="//fe807f.myshopify.com/cdn/shop/files/Image.png?v=1713211120&amp;width=1500" alt="" srcset="//fe807f.myshopify.com/cdn/shop/files/Image.png?v=1713211120&amp;width=165 165w, //fe807f.myshopify.com/cdn/shop/files/Image.png?v=1713211120&amp;width=360 360w, //fe807f.myshopify.com/cdn/shop/files/Image.png?v=1713211120&amp;width=535 535w, //fe807f.myshopify.com/cdn/shop/files/Image.png?v=1713211120&amp;width=750 750w, //fe807f.myshopify.com/cdn/shop/files/Image.png?v=1713211120&amp;width=1070 1070w, //fe807f.myshopify.com/cdn/shop/files/Image.png?v=1713211120&amp;width=1500 1500w" width="1500" height="1585" loading="lazy" sizes="(min-width: 1400px) 650px,
+              (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)">
+</div>
+    </div>
+    
+  </div>
+
+</div>
+ 
