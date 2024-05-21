@@ -1,0 +1,199 @@
+{{ 'custom_review.css' | asset_url | stylesheet_tag }}
+
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+    padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+
+<div class="color-{{ section.settings.color_scheme }} gradient">
+<div class="section-{{ section.id }}-padding">
+
+<div class="frame_review_wrapper">
+ <div class="frame_review">
+      <div class="div">
+        <p class="hearing-the">HEAR HOW OUR HEARING AIDS MAKE A REAL DIFFERENCE</p>
+        <p class="text-wrapper">Real Stories, Real Transformations – Hear What Our Customers Have to Say</p>
+      </div>
+      <div class="div-2">
+        <div class="div-3">
+          <img class="rectangle" src="/cdn/shop/files/review_imeages-10.webp?v=1702469586" />
+          <div class="div-4">
+            <div class="text-wrapper-2">Emily Parker</div>
+            <div class="div-5">
+              {% for i in (1..5) %}
+              <img class="star-rate" src="/cdn/shop/files/star-rate.png" />
+              {% endfor %}
+            </div>
+          </div>
+          <p class="p">
+These hearing aids work out so well for me. I have tried multiple different brands for hearing aids but I always felt a lot of discomfort. After all of these fails I just had to keep on searching. My friend tried recommending this one for me so I went ahead to try it out. Once I had them in, my hearing was just outstanding! Now I can easily hear what was going on.          </p>
+          <div class="div-6">
+            <img class="new-releases" src="/cdn/shop/files/new-releases.png" />
+            <div class="text-wrapper-3">Verified Customer</div>
+          </div>
+        </div>
+        <div class="div-3">
+          <img class="rectangle" src="/cdn/shop/files/review_imeages-11.webp?v=1702469586" />
+          <div class="div-4">
+            <div class="text-wrapper-2">Benjamin Hughes</div>
+            <div class="div-5">
+              {% for i in (1..5) %}
+              <img class="star-rate" src="/cdn/shop/files/star-rate.png" />
+              {% endfor %}
+            </div>
+          </div>
+          <p class="p">
+I purchased these hearing aids for my grandfather who has been battling hearing loss for a long time. From the moment he put the hearing aids on, we could see the joy on his face as he could clearly hear our conversation again. Noise cancellation significantly reduces background noise, making it easier for him to hold conversations even in somewhat noisy environments.           </p>
+          <div class="div-6">
+            <img class="new-releases" src="/cdn/shop/files/new-releases.png" />
+            <div class="text-wrapper-3">Verified Customer</div>
+          </div>
+        </div>
+        <div class="div-3">
+          <img class="rectangle" src="/cdn/shop/files/review_imeages-12.webp?v=1702469586" />
+          <div class="div-4">
+            <div class="text-wrapper-2">Sophia Mitchell</div>
+            <div class="div-5">
+             {% for i in (1..5) %}
+              <img class="star-rate" src="/cdn/shop/files/star-rate.png" />
+              {% endfor %}
+            </div>
+          </div>
+          <p class="p">
+I was struggling with hearing loss, and these aids have changed everything for me. They enhance my hearing in a way that makes me feel more connected to the world. The feedback cancellation is impressive and makes sure I don't get that annoying whistling noise. It has three different modes for different situations. These hearing aids have made a significant difference in my life.
+</p>
+          <div class="div-6">
+            <img class="new-releases" src="/cdn/shop/files/new-releases.png" />
+            <div class="text-wrapper-3">Verified Customer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div> 
+</div>
+
+  
+
+<div class="frame_reasons_wrapper">
+<div class="frame_reasons">
+      <div class="div">
+        <p class="clarihearing-vs-the">WHY OUR HEARING AIDS ARE THE PREFERRED CHOICE</p>
+      </div>
+      <div class="div-2">
+        <div class="div-3">
+          <div class="logo">
+            <div class="logo-2">
+              <div class="overlap-group">
+                <img width="168"  src="/cdn/shop/files/ClariHearing_LOGO7.png" />
+              </div>
+              
+            </div>
+          </div>
+          <div class="logo"><div class="text-wrapper-4">Other Brands</div></div>
+        </div>
+        <div class="div-4">
+          <div class="div-5">
+            <p class="p">Price</p>
+            <div class="div-6">
+              <div class="img-wrapper">$249</div>
+              <div class="img-wrapper">$2500</div>
+            </div>
+          </div>
+          <div class="div-5">
+            <p class="p">Prescription-Free OTC Hearing Aids</p>
+            <div class="div-6">
+              <div class="img-wrapper"><img class="img-2" src="/cdn/shop/files/check-circle.png" /></div>
+              <div class="img-wrapper"><img class="img-2" src="/cdn/shop/files/cancel.png" /></div>
+            </div>
+          </div>
+          <div class="div-5">
+            <p class="p">45-day money-back guarantee</p>
+            <div class="div-6">
+              <div class="img-wrapper"><img class="img-2" src="/cdn/shop/files/check-circle.png" /></div>
+              <div class="img-wrapper"><img class="img-2" src="/cdn/shop/files/cancel.png" /></div>
+            </div>
+          </div>
+          <div class="div-5">
+            <p class="p">Portable Charging Case</p>
+            <div class="div-6">
+              <div class="img-wrapper"><img class="img-2" src="/cdn/shop/files/check-circle.png" /></div>
+              <div class="img-wrapper"><img class="img-2" src="/cdn/shop/files/cancel.png" /></div>
+            </div>
+          </div>
+          <div class="div-5">
+            <p class="p">20+ Hour Battery Life</p>
+            <div class="div-6">
+              <div class="img-wrapper"><img class="img-2" src="/cdn/shop/files/check-circle.png" /></div>
+              <div class="img-wrapper"><img class="img-2" src="/cdn/shop/files/cancel.png" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+  
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.custom-review.name",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "liquid",
+      "id": "custom_review",
+      "label": "t:sections.custom-review.settings.custom_review.label",
+      "info": "t:sections.custom-review.settings.custom_review.info"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 52
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.custom-review.presets.name"
+    }
+  ]
+}
+{% endschema %}

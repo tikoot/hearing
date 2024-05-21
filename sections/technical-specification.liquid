@@ -1,0 +1,154 @@
+{{ 'custom_product_section.css' | asset_url | stylesheet_tag }}
+{%style%}
+.list-main-wrapper{
+    background-color:#F4FAFC;
+    padding:40px 32px;
+    border-radius:16px;
+}
+ .list-wrapper{
+    display:flex;
+    gap:48px;
+ }
+
+  .list-wrapper ul{
+    width:544px;
+ }
+
+   .list-wrapper ul li{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0px;
+    height:48px;
+   
+ }
+ hr{
+    margin:24px 0;
+ }
+
+.name{
+    color:#000000;
+    font-size:16px;
+    font-weight:normal;
+ }
+
+.desc{
+font-weight:600px;
+ color:#000000;
+    font-size:16px;
+ }
+
+
+ @media (max-width: 768px) {
+   .list-wrapper{
+    display:flex;
+    flex-direction:column;
+    gap:0;
+    margin: 0 20px;
+    
+ 
+ }
+
+ .list-main-wrapper{
+    margin: 0 20px;
+}
+
+  hr{
+    margin:12px 0;
+ }
+
+   .list-wrapper ul{
+    min-width:335px;
+    width:100%;
+ }
+
+
+ .name{
+   
+    font-size:12px;
+   
+ }
+
+.desc{
+    font-size:14px;
+    padding-left:4px;
+ }
+
+}
+{%endstyle%}
+
+<div class="frame_reasons_wrapper">
+<div class="frame_reasons">
+      <div class="div">
+        <p class="clarihearing-vs-the">Technical Specification</p>
+      </div>
+      <div class="list-main-wrapper">
+        <div class="list-wrapper">
+            <ul>
+                <li>
+                    <p class="name">Model</p>
+                    <p class="desc">CLARI Hearing Aids</p>
+                </li>
+                <hr>
+                <li>
+                    <p class="name">Max-OSPL90</p>
+                    <p class="desc">112db + 3db</p>
+
+                </li>
+                  <hr>
+                <li>
+                    <p class="name">HFA-OSPL90</p>
+                    <p class="desc">112db + 3db</p>
+                </li>
+                  <hr>
+                <li>
+                    <p class="name">HFA-FOG50</p>
+                    <p class="desc">112db + 3db</p>
+                </li>
+                
+<hr>
+            </ul>
+            <ul>
+                <li>
+                    <p class="name">Frequency Range</p>
+                    <p class="desc">300Hz < F < 6000Hz</p>
+                </li>
+                <hr>
+                <li>
+                    <p class="name">THD</p>
+                    <p class="desc">500/800/1600Hz < 2% + 3%</p>
+                </li>
+                <hr>
+                <li>
+                    <p class="name">EQ Input Noise</p>
+                    <p class="desc">The actual measured value should be < 32db + 3db</p>
+                </li>
+                <hr>
+                <li>
+                    <p class="name">Battery Current</p>
+                    <p class="desc">2.8mA</p>
+                </li>
+                <hr>
+            </ul>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+{% schema %}
+{
+   "name": "Compare Section",
+   "settings": [
+   {
+      "type": "liquid",
+      "id": "compare_section",
+      "label": "Compare Section",
+      "info": "Add custom Compare Section by dkalandadze"
+   }],
+   "presets": [
+   {
+      "name": "Compare Section"
+   }]
+}
+{% endschema %}

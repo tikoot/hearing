@@ -1,0 +1,39 @@
+{% for product in collections.all.products %}
+   {% case product.id %}
+      {% when 8577974599959 %}
+         {% assign clari_product = product %}
+   {% endcase %}
+{% endfor %}
+          
+<form method="post" action="/cart/add" id="product-form-template--20498569462039__main" accept-charset="UTF-8" class="form" enctype="multipart/form-data" novalidate="novalidate" data-type="add-to-cart-form">
+<input type="hidden" name="form_type" value="product">
+<input type="hidden" name="utf8" value="✓">
+<input type="hidden" name="id" value="{{ clari_product.variants.first.id }}" class="product-variant-id">
+<div class="product-form__buttons">
+<button type="submit" onclick="redirectToCheckout(); return false;" id="ProductSubmitButton-template--20498569462039__main"  name="add" class="product-form__submit button  button--primary" aria-haspopup="dialog" >
+<span>BUY IT NOW 👉</span>
+<div class="loading-overlay__spinner hidden">
+<svg aria-hidden="true" focusable="false" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+<circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+</svg>
+ </div>
+</button>
+</div>
+<input type="hidden" name="product-id" value="8577974599959">
+</form>
+
+
+<script>
+  function redirectToCheckout() {
+    fetch('/cart/add.js', {
+      method: 'POST',
+      body: new FormData(document.getElementById('product-form-template--20498569462039__main'))
+    })
+    .then(response => {
+      window.location.href = '/checkout';
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+  }
+</script>

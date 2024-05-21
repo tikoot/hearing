@@ -1,0 +1,143 @@
+{{ 'review_carousel.css' | asset_url | stylesheet_tag }}
+{{ 'owl.carousel.css' | asset_url | stylesheet_tag }}
+{{ 'owl.theme.default.css' | asset_url | stylesheet_tag }}
+{{ section.settings.review_carousel }}
+
+{{ 'jquery.min.js' | asset_url | script_tag }}
+{{ 'owl.carousel.js' | asset_url | script_tag }}
+
+<div class="carousel_frame_review_wrapper">
+<div class="carousel_frame_review">
+<div class="div">
+<p class="hearing-the">HEAR HOW OUR HEARING AIDS MAKE A REAL DIFFERENCE </p>
+<p class="text-wrapper">Real Stories, Real Transformations – Hear What Our Customers Have to Say</p>
+
+</div>
+
+
+<div id="review-carousel" class="owl-carousel owl-theme">
+<div class="div-3">
+          <img class="rectangle" src="/cdn/shop/files/review_imeages-10.webp" />
+          <div class="div-4">
+            <div class="text-wrapper-2">Emily Parker</div>
+            <div class="div-5">
+              {% for i in (1..5) %}
+              <img class="star-rate" src="/cdn/shop/files/star-rate.png" />
+              {% endfor %}
+            </div>
+          </div>
+          <p class="p">
+        These hearing aids work out so well for me. I have tried multiple different brands for hearing aids but I always felt a lot of discomfort. After all of these fails I just had to keep on searching. My friend tried recommending this one for me so I went ahead to try it out. Once I had them in, my hearing was just outstanding! Now I can easily hear what was going on.
+          </p>
+          <div class="div-6">
+            <img class="new-releases" src="/cdn/shop/files/new-releases.png" />
+            <div class="text-wrapper-3">Verified Customer</div>
+          </div>
+        </div>
+<div class="div-3">
+          <img class="rectangle" src="/cdn/shop/files/review_imeages-11.webp" />
+          <div class="div-4">
+            <div class="text-wrapper-2">Benjamin Hughes</div>
+            <div class="div-5">
+              {% for i in (1..5) %}
+              <img class="star-rate" src="/cdn/shop/files/star-rate.png" />
+              {% endfor %}
+            </div>
+          </div>
+          <p class="p">
+         I purchased these hearing aids for my grandfather who has been battling hearing loss for a long time. From the moment he put the hearing aids on, we could see the joy on his face as he could clearly hear our conversation again. Noise cancellation significantly reduces background noise, making it easier for him to hold conversations even in somewhat noisy environments.
+          </p>
+          <div class="div-6">
+            <img class="new-releases" src="/cdn/shop/files/new-releases.png" />
+            <div class="text-wrapper-3">Verified Customer</div>
+          </div>
+        </div>
+<div class="div-3">
+          <img class="rectangle" src="/cdn/shop/files/review_imeages-12.webp" />
+          <div class="div-4">
+            <div class="text-wrapper-2">Sophia Mitchell</div>
+            <div class="div-5">
+             {% for i in (1..5) %}
+              <img class="star-rate" src="/cdn/shop/files/star-rate.png" />
+              {% endfor %}
+            </div>
+          </div>
+          <p class="p">
+         I was struggling with hearing loss, and these aids have changed everything for me. They enhance my hearing in a way that makes me feel more connected to the world. The feedback cancellation is impressive and makes sure I don't get that annoying whistling noise. It has three different modes for different situations. These hearing aids have made a significant difference in my life.
+
+
+          </p>
+          <div class="div-6">
+            <img class="new-releases" src="/cdn/shop/files/new-releases.png" />
+            <div class="text-wrapper-3">Verified Customer</div>
+          </div>
+        </div>
+</div>
+
+<div>
+  <button id="ProductSubmitButton-template--22492572680471__main" type="submit" name="add" class="product-form__submit button  button--primary" aria-haspopup="dialog" style="margin-bottom:112px;" >
+        
+            <span>
+                Buy CLARI Hearing™ Aids</span>
+
+            
+            <div class="loading-overlay__spinner hidden">
+              <svg aria-hidden="true" focusable="false" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+              </svg>
+            </div>
+          </button>
+</div>
+
+</div>
+</div>
+
+
+
+<script>
+$(document).ready(function() {
+              var owl = $('.owl-carousel');
+              owl.owlCarousel({
+                dots: false,
+                navText: ["","<img src='/cdn/shop/files/next.svg'>"],
+                responsive: {
+                  0: {
+                    items: 1,
+                    nav: true,
+                    margin:10,
+                    loop: true,
+                    stagePadding: 20
+                  },
+                  600: {
+                    items: 2,
+                    nav: true,
+                    margin:10,
+                    loop: true,
+                    stagePadding: 20
+                  },
+                  1000: {
+                    items: 3,
+                    loop: false,
+                    margin:20
+                  }
+                }
+              })
+            })
+</script>
+
+{% schema %}
+{
+   "name": "Review carousel",
+   "settings": [
+   {
+      "type": "liquid",
+      "id": "review_carousel",
+      "label": "Review carousel",
+      "info": "Add custom review carousel by dkalandadze"
+   }],
+   "presets": [
+   {
+      "name": "Review carousel"
+   }]
+}
+{% endschema %}

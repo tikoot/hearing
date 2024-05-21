@@ -1,0 +1,418 @@
+{% comment %}theme-check-disable UndefinedObject{% endcomment %}
+{{ 'section-footer.css' | asset_url | stylesheet_tag }}
+{{ 'component-newsletter.css' | asset_url | stylesheet_tag }}
+{{ 'component-list-menu.css' | asset_url | stylesheet_tag }}
+{{ 'component-list-payment.css' | asset_url | stylesheet_tag }}
+{{ 'component-list-social.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+
+  .footer {
+    margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
+    padding: 120px 120px 0 120px;
+  }
+
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  .frame-footer_one{
+
+  display: flex;
+   
+    align-items: center;
+    justify-content: space-between;
+    gap: 128px;
+}
+
+  @media screen and (min-width: 750px) {
+    .footer {
+      margin-top: {{ section.settings.margin_top }}px;
+      padding: 32px 20px;
+    }
+
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+.footer-last{
+padding-bottom:80px;    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.input-field{
+color:#62747A;border-radius:58px; border:1px solid #62747A;padding:10px 20px;width:70%
+}
+
+.sub-btn{
+color:#036788;border-radius:58px; border:1px solid #036788;padding:10px 28px
+}
+    @media screen and (max-width: 750px) {
+    .footer {
+      
+      padding: 32px 20px;
+    }
+
+      .frame-footer_one{
+
+  flex-direction:column;
+}
+
+.div-2 .third{
+  flex-direction:column;
+}
+
+.frame_footer .div-3{
+  justify-content:flex-start;
+}
+.footer-last{
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items:start;
+  padding: 0 20px 56px 20px;
+}
+   .frame-footer_one{
+    gap:0;
+            padding: 56px 20px;
+   }
+
+           .header__heading-logo{
+    max-width:188px;
+   }
+   .input-field{
+    width:100%;
+    margin-bottom:8px;
+   }
+
+   .sub-btn{
+  width:100%;
+}
+  
+  }
+{%- endstyle -%}
+
+<footer class="footer">
+
+
+<div class="frame_footer">
+ 
+<div class="frame-footer_one" >
+  <div >
+ <div class="header__heading-logo-wrapper">
+                
+                <img src="//fe807f.myshopify.com/cdn/shop/files/ClariHearing_LOGO7.png?v=1695299449&amp;width=600" alt="CLARI Hearing™ Aids | Affordable Best OTC Hearing Aids in USA" srcset="//fe807f.myshopify.com/cdn/shop/files/ClariHearing_LOGO7.png?v=1695299449&amp;width=213 213w, //fe807f.myshopify.com/cdn/shop/files/ClariHearing_LOGO7.png?v=1695299449&amp;width=390 390w, //fe807f.myshopify.com/cdn/shop/files/ClariHearing_LOGO7.png?v=1695299449&amp;width=520 520w" width="260" height="63.586956521739125" loading="eager" class="header__heading-logo motion-reduce" sizes="(max-width: 213px) 50vw, 260px">
+              </div>
+      <div>
+        <p style="font-size:16px; font-weight:600; padding-top:40px;padding-bottom:20px;">Join our newsletter to stay up to date on features and releases.</p>
+        <div>
+          <input type="text" placeholder="Enter your email" class="input-field">
+          <button class="sub-btn">Subscribe</button>
+        </div>
+        <p style="font-size:12px;color:#62747A;padding-top:12px;">By subscribing you agree to with our
+         <a href="/policies/refund-policy" style="text-decoration: underline;">Privacy Policy</a>  and provide consent to receive <br> updates from our company.</p>
+      </div>
+  </div>
+     
+      <div class="div-2">
+        <div class="div-3 third">
+          <div class="div-3">
+<div>
+ <p style="font-size:16px; font-weight:600; padding-bottom:16px;">Company</p>
+          <div class="div-4">
+            <div class="text-wrapper-3"><a href="/products/clari-hearing-aids">Hearing Aids</a></div>
+            <div class="text-wrapper-4"><a href="/pages/about-us">About us</a></div>
+            <div class="text-wrapper-4"><a href="/pages/faqs">FAQs</a></div>
+            <div class="text-wrapper-4"><a href="/pages/contact">Contact us</a></div>
+            <div class="text-wrapper-3"><a href="/blogs/blog">Blog</a></div>
+          </div>
+          </div>
+         <div>
+          <p style="font-size:16px; font-weight:600; padding-bottom:16px;">Legal</p>
+           <div class="div-4">
+            <div class="text-wrapper-4"><a href="/pages/about-otc-hearing-aids">About OTC hearing aids</a></div>
+            <div class="text-wrapper-4"><a href="/policies/refund-policy">Shipping Policy</a></div>
+            <div class="text-wrapper-4"><a href="/policies/refund-policy">Refund Policy</a></div>
+          </div>
+         </div>
+          </div>
+          
+          <div>
+          <p style="font-size:16px; font-weight:600; padding-bottom:16px;">Follow Us</p>
+           <div class="div-4">
+            <div class="text-wrapper-3"><a target="_blank" href="https://www.facebook.com/ClariHearingAids" style="display: flex; align-items:center;gap:8px;"><img class="huge-icon-social" src="{{ 'Facebook.png' | asset_url }}" />Facebook</a></div>
+            <div class="text-wrapper-3"><a target="_blank" style="display: flex; align-items:center;gap:8px;" href="https://www.instagram.com/clarihearingaids/"><img class="huge-icon-social" src="{{ 'Instagram.png' | asset_url }}" />Instagram</a></div>
+            <div class="text-wrapper-3"><a target="_blank" style="display: flex; align-items:center;gap:8px;" href="https://www.instagram.com/clarihearingaids/"><img class="huge-icon-social" src="{{ 'X.png' | asset_url }}" />X</a></div>
+            <div class="text-wrapper-3"><a target="_blank" style="display: flex; align-items:center;gap:8px;" href="https://www.instagram.com/clarihearingaids/"><img class="huge-icon-social" src="{{ 'LinkedIn.png' | asset_url }}" />LinkedIn</a></div>
+            <div class="text-wrapper-3"><a target="_blank" style="display: flex; align-items:center;gap:8px;" href="https://www.instagram.com/clarihearingaids/"><img class="huge-icon-social" src="{{ 'Youtube.png' | asset_url }}" />Youtube</a></div>
+          </div>
+         </div>
+         
+        </div>
+       
+      </div>
+
+</div>
+
+    </div>
+ <hr style="margin:48px 0">
+
+  <div class="footer-last" >
+    <p style="font-size:14px;font-weight:600;">
+      © 2023 CLARI Hearing. All rights reserved.
+    </p>
+    <div>
+      <a  href="/policies/refund-policy" style="font-size:14px;text-decoration:underline;margin-right:24px">Privacy Policy</a>
+      <a  href="/policies/refund-policy" style="font-size:14px;text-decoration:underline">Cookies Settings</a>
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "t:sections.footer.name",
+  "blocks": [
+    {
+      "type": "@app"
+    },
+    {
+      "type": "link_list",
+      "name": "t:sections.footer.blocks.link_list.name",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "default": "Quick links",
+          "label": "t:sections.footer.blocks.link_list.settings.heading.label"
+        },
+        {
+          "type": "link_list",
+          "id": "menu",
+          "default": "footer",
+          "label": "t:sections.footer.blocks.link_list.settings.menu.label",
+          "info": "t:sections.footer.blocks.link_list.settings.menu.info"
+        }
+      ]
+    },
+    {
+      "type": "brand_information",
+      "name": "t:sections.footer.blocks.brand_information.name",
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "t:sections.footer.blocks.brand_information.settings.paragraph.content"
+        },
+        {
+          "type": "header",
+          "content": "t:sections.footer.blocks.brand_information.settings.header__1.content"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_social",
+          "default": true,
+          "label": "t:sections.footer.blocks.brand_information.settings.show_social.label",
+          "info": "t:sections.footer.blocks.brand_information.settings.show_social.info"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "t:sections.footer.blocks.text.name",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "default": "Heading",
+          "label": "t:sections.footer.blocks.text.settings.heading.label"
+        },
+        {
+          "type": "richtext",
+          "id": "subtext",
+          "default": "<p>Share contact information, store details, and brand content with your customers.</p>",
+          "label": "t:sections.footer.blocks.text.settings.subtext.label"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "range",
+          "id": "image_width",
+          "min": 50,
+          "max": 550,
+          "step": 5,
+          "unit": "px",
+          "label": "Image width",
+          "default": 100
+        },
+        {
+          "type": "select",
+          "id": "alignment",
+          "label": "Image alignment on large screen",
+          "options": [
+            {
+              "value": "",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "center"
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.footer.settings.header__1.content",
+      "info": "t:sections.footer.settings.header__1.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "newsletter_enable",
+      "default": true,
+      "label": "t:sections.footer.settings.newsletter_enable.label"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "newsletter_heading",
+      "default": "Subscribe to our emails",
+      "label": "t:sections.footer.settings.newsletter_heading.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.footer.settings.header__9.content",
+      "info": "t:sections.footer.settings.header__9.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_follow_on_shop",
+      "default": true,
+      "label": "t:sections.footer.settings.enable_follow_on_shop.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.footer.settings.header__2.content",
+      "info": "t:sections.footer.settings.header__2.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_social",
+      "default": true,
+      "label": "t:sections.footer.settings.show_social.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.footer.settings.header__3.content",
+      "info": "t:sections.footer.settings.header__4.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_country_selector",
+      "default": true,
+      "label": "t:sections.footer.settings.enable_country_selector.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.footer.settings.header__5.content",
+      "info": "t:sections.footer.settings.header__6.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_language_selector",
+      "default": true,
+      "label": "t:sections.footer.settings.enable_language_selector.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.footer.settings.header__7.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "payment_enable",
+      "default": true,
+      "label": "t:sections.footer.settings.payment_enable.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.footer.settings.header__8.content",
+      "info": "t:sections.footer.settings.header__8.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_policy",
+      "default": false,
+      "label": "t:sections.footer.settings.show_policy.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.spacing"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.footer.settings.margin_top.label",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "link_list"
+      },
+      {
+        "type": "text"
+      }
+    ]
+  }
+}
+{% endschema %}

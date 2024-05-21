@@ -1,0 +1,42 @@
+{{ 'custom_product_section.css' | asset_url | stylesheet_tag }}
+
+
+
+<div class="section_guarantee">
+
+<div class="frame_guarantee">
+<img class="money-back" src="/cdn/shop/files/11-01.svg" />
+<p class="text-wrapper">45 days money back guarantee</p>
+</div>
+
+
+<div class="frame_guarantee">
+<img class="money-back" src="/cdn/shop/files/11-02.svg" />
+<p class="text-wrapper">Free shipping across USA</p>
+</div>
+
+<div class="frame_guarantee">
+<img class="money-back" src="/cdn/shop/files/11-03.svg" />
+<p class="text-wrapper">1-Year Unlimited Warranty</p>
+</div>
+
+</div>
+
+
+
+{% schema %}
+{
+   "name": "Warranty Section",
+   "settings": [
+   {
+      "type": "liquid",
+      "id": "warranty_section",
+      "label": "Warranty Section",
+      "info": "Add custom warranty section by dkalandadze"
+   }],
+   "presets": [
+   {
+      "name": "Warranty Section"
+   }]
+}
+{% endschema %}

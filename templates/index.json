@@ -1,0 +1,395 @@
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "2f5c7047-97af-4fed-96cf-1d63e41dc0e5": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>FDA Registered and Audiologist-Trusted, with Backing from 100,000 Studies</strong>",
+            "text_style": "body"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Your Trusted Partner for Sound Clarity",
+            "heading_size": "h0"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "BUY IT NOW 👉",
+            "button_link_1": "shopify://products/clari-hearing-aids",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "2f5c7047-97af-4fed-96cf-1d63e41dc0e5",
+        "heading",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/white_bg.jpg",
+        "image_overlay_opacity": 100,
+        "image_height": "adapt",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "inverse",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "da214b1e-b497-4bfa-87ea-a347335f3f8e": {
+      "type": "rich-text",
+      "blocks": {
+        "template--20498569396503__da214b1e-b497-4bfa-87ea-a347335f3f8e-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Why are CLARI Hearing™ Aids the Preferred Choice for Over 50,000 Satisfied Customers?",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--20498569396503__da214b1e-b497-4bfa-87ea-a347335f3f8e-heading-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 48,
+        "padding_bottom": 0
+      }
+    },
+    "3625e9e3-cd62-4a99-a102-34a982080237": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--20498569396503__3625e9e3-cd62-4a99-a102-34a982080237-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>SUITABLE FOR ALL TYPES OF HEARING LOSS</strong>",
+            "heading_size": "h2"
+          }
+        },
+        "template--20498569396503__3625e9e3-cd62-4a99-a102-34a982080237-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Perfect for individuals with varying levels of hearing loss. They're equipped with<strong> 3 custom programs</strong> <strong>and improved sound quality,</strong> ensuring they meet your specific hearing needs.<br/><br/><strong>1. Normal mode</strong> - Ideal for TV and everyday conversations.</p><p><strong>2. Noise Reduction Mode</strong> - Designed for lively settings like parties, planes, and active pursuits.</p><p><strong>3. Outdoor mode</strong> - Tailored for sound-sensitive individuals or noisy environments.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--20498569396503__3625e9e3-cd62-4a99-a102-34a982080237-heading-1",
+        "template--20498569396503__3625e9e3-cd62-4a99-a102-34a982080237-text-1"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/r1ev-06.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "4c9bb3fd-01ad-4295-9db1-02ec0fa85b87": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--20498569396503__4c9bb3fd-01ad-4295-9db1-02ec0fa85b87-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Charge Once, Hear All Day</strong>",
+            "heading_size": "h2"
+          }
+        },
+        "template--20498569396503__4c9bb3fd-01ad-4295-9db1-02ec0fa85b87-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our advanced hearing aids come with <strong>a pocket-sized charging case</strong> that will save you tons of money on batteries.<br/><br/><strong>Get 20+ hours of crystal-clear sound on a single charge</strong> <strong>– four times over</strong>. Say goodbye to battery anxiety and hello to uninterrupted conversations all day long. </p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--20498569396503__4c9bb3fd-01ad-4295-9db1-02ec0fa85b87-heading-1",
+        "template--20498569396503__4c9bb3fd-01ad-4295-9db1-02ec0fa85b87-text-1"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/rev-05.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "96af2b14-13a6-42c6-b124-c3164b6b795b": {
+      "type": "warranty_section",
+      "settings": {
+        "warranty_section": ""
+      }
+    },
+    "9525e8ad-e267-4d7d-982e-3e400c4d2817": {
+      "type": "featured-product",
+      "blocks": {
+        "template--20498569396503__9525e8ad-e267-4d7d-982e-3e400c4d2817-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--20498569396503__9525e8ad-e267-4d7d-982e-3e400c4d2817-title-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "template--20498569396503__9525e8ad-e267-4d7d-982e-3e400c4d2817-price-1": {
+          "type": "price",
+          "settings": {}
+        },
+        "template--20498569396503__9525e8ad-e267-4d7d-982e-3e400c4d2817-variant_picker-1": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "template--20498569396503__9525e8ad-e267-4d7d-982e-3e400c4d2817-quantity_selector-1": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "template--20498569396503__9525e8ad-e267-4d7d-982e-3e400c4d2817-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "template--20498569396503__9525e8ad-e267-4d7d-982e-3e400c4d2817-share-1": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "template--20498569396503__9525e8ad-e267-4d7d-982e-3e400c4d2817-text-1",
+        "template--20498569396503__9525e8ad-e267-4d7d-982e-3e400c4d2817-title-1",
+        "template--20498569396503__9525e8ad-e267-4d7d-982e-3e400c4d2817-price-1",
+        "template--20498569396503__9525e8ad-e267-4d7d-982e-3e400c4d2817-variant_picker-1",
+        "template--20498569396503__9525e8ad-e267-4d7d-982e-3e400c4d2817-quantity_selector-1",
+        "template--20498569396503__9525e8ad-e267-4d7d-982e-3e400c4d2817-buy_buttons-1",
+        "template--20498569396503__9525e8ad-e267-4d7d-982e-3e400c4d2817-share-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "product": "",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1694604255187c2ad9": {
+      "type": "apps",
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "b0c678dc-561e-4550-b5f1-53e5f14893d9": {
+      "type": "custom-review",
+      "disabled": true,
+      "settings": {
+        "custom_review": "",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "13024b54-52f4-4f1f-8c19-4441f6ef9c95": {
+      "type": "review_carousel",
+      "settings": {
+        "review_carousel": ""
+      }
+    },
+    "cb17809c-cfed-46b9-9acc-77cf9dcc2602": {
+      "type": "best_in_class_section",
+      "settings": {
+        "best_in_class": ""
+      }
+    },
+    "2afff309-00f2-4c03-a0d1-2942f65a42c3": {
+      "type": "compare_section",
+      "settings": {
+        "compare_section": ""
+      }
+    },
+    "d60e5d9c-ec89-4bb8-9f69-7a23a2ecc94f": {
+      "type": "collapsible-content",
+      "blocks": {
+        "68476298-0a87-4432-899b-1ae1f9b29030": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What are Over-the-Counter (OTC) hearing aids?",
+            "icon": "none",
+            "row_content": "<p>OTC hearing aids are FDA-regulated medical devices that can be purchased without a hearing exam, prescription, or appointment with an audiologist.<br/><br/>Over-the-counter (OTC) hearing aids are appropriate for adults age 18 and older with perceived mild to moderate hearing loss.</p>",
+            "page": ""
+          }
+        },
+        "template--20498569396503__d60e5d9c-ec89-4bb8-9f69-7a23a2ecc94f-collapsible_row-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is included with the Clari Hearing™ Aids?",
+            "icon": "none",
+            "row_content": "<ul><li>2x Hearing Aids</li><li>1x Portable Charging Case</li><li>4x Ear Domes</li><li>1x Wax Guard Filter </li><li>1x Charging Cable</li><li>1x Cleaning Brush </li></ul>",
+            "page": ""
+          }
+        },
+        "template--20498569396503__d60e5d9c-ec89-4bb8-9f69-7a23a2ecc94f-collapsible_row-4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are Clari Hearing™ Aids FDA Approved?",
+            "icon": "none",
+            "row_content": "<p>Clari Hearing™ Aids are FDA-registered, Class I. This means they are considered to have the least amount of risk and are generally safe for use.</p>",
+            "page": ""
+          }
+        },
+        "2eafd7fe-0b15-4e07-bbd0-0b1a5b920d6d": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Who are Clari Hearing™ Aids designed for?",
+            "icon": "none",
+            "row_content": "<p>Clari Hearing™ aids are designed for those with mild hearing loss to moderate hearing loss. They are not intended for those with severe hearing loss.<br/></p>",
+            "page": ""
+          }
+        },
+        "742abb23-7262-4647-baff-07ddcac5d5bd": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How does someone know they have mild to moderate hearing loss vs. severe hearing loss?",
+            "icon": "none",
+            "row_content": "<p>Individuals with severe hearing loss often have a difficult time hearing conversations even in quiet settings, as well as difficulty hearing loud noises. They might also begin to read lips as a result of their hearing difficulties. Those with mild to moderate hearing loss typically have difficulty hearing in loud environments or in group settings, on the phone, or while watching TV. If you aren’t sure whether or not your hearing loss is severe, consider making an appointment with your doctor. </p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "68476298-0a87-4432-899b-1ae1f9b29030",
+        "template--20498569396503__d60e5d9c-ec89-4bb8-9f69-7a23a2ecc94f-collapsible_row-2",
+        "template--20498569396503__d60e5d9c-ec89-4bb8-9f69-7a23a2ecc94f-collapsible_row-4",
+        "2eafd7fe-0b15-4e07-bbd0-0b1a5b920d6d",
+        "742abb23-7262-4647-baff-07ddcac5d5bd"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "<strong>FAQ</strong>",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 44,
+        "padding_bottom": 56
+      }
+    },
+    "399f8dc2-33a5-480d-bf19-bb8350b6454c": {
+      "type": "image-banner",
+      "blocks": {
+        "0676e5ac-c88b-4631-90fd-87290268b1a8": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>FDA Registered and Audiologist-Trusted, with Backing from 100,000 Studies</strong>",
+            "text_style": "body"
+          }
+        },
+        "8b058375-f73a-471c-99c9-17859d53e742": {
+          "type": "heading",
+          "settings": {
+            "heading": "Your Trusted Partner for Sound Clarity",
+            "heading_size": "h0"
+          }
+        },
+        "48f88e86-eefd-4301-abbd-8323bd18b05d": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Buy Clari Hearing",
+            "button_link_1": "shopify://products/clari-hearing-aids",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "0676e5ac-c88b-4631-90fd-87290268b1a8",
+        "8b058375-f73a-471c-99c9-17859d53e742",
+        "48f88e86-eefd-4301-abbd-8323bd18b05d"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/white_bg.jpg",
+        "image_overlay_opacity": 100,
+        "image_height": "adapt",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "inverse",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "da214b1e-b497-4bfa-87ea-a347335f3f8e",
+    "3625e9e3-cd62-4a99-a102-34a982080237",
+    "4c9bb3fd-01ad-4295-9db1-02ec0fa85b87",
+    "96af2b14-13a6-42c6-b124-c3164b6b795b",
+    "9525e8ad-e267-4d7d-982e-3e400c4d2817",
+    "1694604255187c2ad9",
+    "b0c678dc-561e-4550-b5f1-53e5f14893d9",
+    "13024b54-52f4-4f1f-8c19-4441f6ef9c95",
+    "cb17809c-cfed-46b9-9acc-77cf9dcc2602",
+    "2afff309-00f2-4c03-a0d1-2942f65a42c3",
+    "d60e5d9c-ec89-4bb8-9f69-7a23a2ecc94f",
+    "399f8dc2-33a5-480d-bf19-bb8350b6454c"
+  ]
+}

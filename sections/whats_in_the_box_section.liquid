@@ -1,0 +1,167 @@
+{{ 'custom_product_section.css' | asset_url | stylesheet_tag }}
+
+
+<div id="shopify-section-template--21463992172823__38c2cb34-032a-40f8-9986-8686e2dade15" class="shopify-section section">
+
+<div class="image-with-text image-with-text--no-overlap page-width isolate">
+<style>
+
+#shopify-section-template--21463992172823__38c2cb34-032a-40f8-9986-8686e2dade15 {background-color: #F4FAFC; padding: 50px 0px}
+#shopify-section-template--21463992172823__38c2cb34-032a-40f8-9986-8686e2dade15 .image-with-text__text-item {border-radius: 20px !important;}
+#shopify-section-template--21463992172823__38c2cb34-032a-40f8-9986-8686e2dade15 .image-with-text__media {background-color:#DCDCDC !important; border-radius: 20px !important; 
+border-radius: 20px !important;}
+#shopify-section-template--21463992172823__38c2cb34-032a-40f8-9986-8686e2dade15 .image-with-text__media img {max-width:630px !important}
+#shopify-section-template--21463992172823__38c2cb34-032a-40f8-9986-8686e2dade15 ol {padding-left: 0px !important}
+#shopify-section-template--21463992172823__38c2cb34-032a-40f8-9986-8686e2dade15 ::marker {color:#3364D9; font-weight: bold}
+#shopify-section-template--21463992172823__38c2cb34-032a-40f8-9986-8686e2dade15 h2 {font-weight: bold; color:black;}
+@media screen and (max-width: 750px) {
+#shopify-section-template--21463992172823__38c2cb34-032a-40f8-9986-8686e2dade15 .image-with-text__media {border-radius: 20px !important; min-height:250px}
+#shopify-section-template--21463992172823__38c2cb34-032a-40f8-9986-8686e2dade15 .image-with-text__text-item {border-radius: 20px !important; }
+/* #shopify-section-template--21463992172823__38c2cb34-032a-40f8-9986-8686e2dade15 img {height:auto !important;} */
+.image-with-text__content {padding-bottom:30px !important;}
+ }
+li{
+   display: flex;
+   align-items: center;
+    margin-bottom:12px;
+   font-weight: 700;
+    font-size: 16px;
+    border: none;
+}
+li img{
+   border:none;
+   margin-right:15px;
+}
+
+.quote{
+   display: flex;
+   align-items: start;
+}
+.quote .desc{
+   font-style: italic;
+   margin-left: 20px;
+   color: #000;
+}
+
+.quote .name{
+   color: #000;
+   margin-left: 20px;
+   font-weight: 700;
+   padding-top: 8px;
+}
+
+.box-wrap{
+   display: flex;
+   align-items:center;
+   gap:56px;
+   padding:135px 45px;
+}
+
+ @media (max-width: 768px) {
+   .box-wrap{
+   padding:56px 20px;
+   flex-direction: column;
+}
+ }
+</style> 
+
+<div style="" class="box-wrap">
+   <div>
+      <h2 class="image-with-text__heading inline-richtext h1 " style="padding-bottom:24px; font-size:32px">What’s in the Box</h2>
+      <ol>
+<li> <img src="{{ '1.png' | asset_url }}" style="border:none"/> 1 x Charging case</li>
+<li> <img src="{{ '2.png' | asset_url }}" style="border:none"/>1 x Pair Clari hearing aids</li>
+<li> <img src="{{ '3.png' | asset_url }}" style="border:none"/>1 x USB-C to USB-A cable</li>
+<li> <img src="{{ '4.png' | asset_url }}" style="border:none"/>1 x Cleaning brush with magnet</li>
+<li> <img src="{{ '5.png' | asset_url }}" style="border:none"/>1 x Wax Guard Filter</li>
+<li> <img src="{{ '6.png' | asset_url }}" style="border:none"/>3 x Pairs closed domes (Size 1, 2, 3)</li>
+</ol>
+ <hr style="margin: 24px 0;">
+<div class="quote">
+   <img src="{{ 'cssc.png' | asset_url }}" style="border:none"/>
+   <div>
+<p class="desc">I can't believe my luck in finding these incredible <br> hearing aids! It's like hitting the jackpot.</p>
+ <p class="name">M. Smith</p>
+   </div>
+   
+</div>
+   </div>
+   <div>
+      <img src="{{ 'bocxx.png' | asset_url }}" alt="" loading="lazy"/>
+   </div>
+</div>
+  
+{% comment %} <div class="image-with-text__grid grid grid--gapless grid--1-col grid--2-col-tablet ">
+
+<div class="image-with-text__text-item grid__item">
+<div id="ImageWithText--template--21463992172823__38c2cb34-032a-40f8-9986-8686e2dade15" class="image-with-text__content image-with-text__content--top image-with-text__content--desktop-left image-with-text__content--mobile-left image-with-text__content--adapt gradient color-background-1 content-container">
+<h2 class="image-with-text__heading inline-richtext h1">What’s in the Box</h2>
+<div class="image-with-text__text rte body">
+<ol>
+<li> <img src="{{ '1.png' | asset_url }}" style="border:none"/> 1 x Charging case</li>
+<li> <img src="{{ '2.png' | asset_url }}" style="border:none"/>1 x Pair Clari hearing aids</li>
+<li> <img src="{{ '3.png' | asset_url }}" style="border:none"/>1 x USB-C to USB-A cable</li>
+<li> <img src="{{ '4.png' | asset_url }}" style="border:none"/>1 x Cleaning brush with magnet</li>
+<li> <img src="{{ '5.png' | asset_url }}" style="border:none"/>1 x Wax Guard Filter</li>
+<li> <img src="{{ '6.png' | asset_url }}" style="border:none"/>3 x Pairs closed domes (Size 1, 2, 3)</li>
+ <hr style="margin: 24px 0;">
+<div class="quote">
+   <img src="{{ 'cssc.png' | asset_url }}" style="border:none"/>
+   <div>
+<p class="desc">I can't believe my luck in finding these incredible hearing aids! It's like hitting the jackpot.</p>
+ <p class="name">M. Smith</p>
+   </div>
+   
+</div>
+</ol>
+ <hr style="margin: 24px 0;">
+<div class="quote">
+   <img src="{{ 'cssc.png' | asset_url }}" style="border:none"/>
+   <div>
+<p class="desc">I can't believe my luck in finding these incredible hearing aids! It's like hitting the jackpot.</p>
+ <p class="name">M. Smith</p>
+   </div>
+   
+</div> 
+</div>
+
+</div>
+
+</div>
+
+  
+<div class="image-with-text__media-item image-with-text__media-item--medium image-with-text__media-item--top grid__item">
+<div class="image-with-text__media image-with-text__media--adapt gradient color-background-1 global-media-settings media">
+<img src="{{ 'bocxx.png' | asset_url }}" alt="" loading="lazy"/>
+</div>
+</div>
+  
+
+
+  
+</div>
+</div>
+
+
+</div>
+
+ {% endcomment %}
+
+</div>
+</div>
+{% schema %}
+{
+   "name": "Whats in the box section",
+   "settings": [
+   {
+      "type": "liquid",
+      "id": "whats_in_the_box_section",
+      "label": "Whats in the box section",
+      "info": "Add custom whats in the box section by dkalandadze"
+   }],
+   "presets": [
+   {
+      "name": "Whats in the box section"
+   }]
+}
+{% endschema %}

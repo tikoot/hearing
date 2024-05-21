@@ -1,0 +1,55 @@
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "fbce5d23-d7b4-46fd-87fd-2fd53aa6cd4e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Untitled-2-04.svg",
+            "image_width": 250,
+            "alignment": ""
+          }
+        },
+        "2c738518-39b6-4716-b0de-58c6548256a7": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Pages",
+            "menu": "footer"
+          }
+        },
+        "20e5020e-ba30-4912-9054-645e245a07cf": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Support",
+            "menu": "support"
+          }
+        }
+      },
+      "block_order": [
+        "fbce5d23-d7b4-46fd-87fd-2fd53aa6cd4e",
+        "2c738518-39b6-4716-b0de-58c6548256a7",
+        "20e5020e-ba30-4912-9054-645e245a07cf"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "newsletter_enable": false,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": true,
+        "show_social": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": false,
+        "show_policy": false,
+        "margin_top": 0,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

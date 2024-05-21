@@ -1,0 +1,41 @@
+{% for product in collections.all.products %}
+   {% case product.id %}
+      {% when 8577974599959 %}
+         {% assign clari_product = product %}
+   {% endcase %}
+{% endfor %}
+          
+<form method="post" action="/cart/add" id="product-form-template--20498569462039__main" accept-charset="UTF-8" enctype="multipart/form-data" novalidate="novalidate" data-type="add-to-cart-form">
+<input type="hidden" name="form_type" value="product">
+<input type="hidden" name="utf8" value="✓">
+<input type="hidden" name="id" value="47436066324759" class="product-variant-id">
+
+ <button type="submit" onclick="redirectToCheckout(); return false;" id="ProductSubmitButton-template--20498569462039__main"  name="add" class="nav-cta button-27 is-icon button-26 w-inline-block">
+                <div class="icon-embed-xsmall-2 w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--iconoir" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                    <g fill="none" stroke="currentColor" stroke-width="1.5">
+                      <path d="M1 13.857v-3.714a2 2 0 0 1 2-2h2.9a1 1 0 0 0 .55-.165l6-3.956a1 1 0 0 1 1.55.835v14.286a1 1 0 0 1-1.55.835l-6-3.956a1 1 0 0 0-.55-.165H3a2 2 0 0 1-2-2Z"></path>
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M17.5 7.5S19 9 19 11.5s-1.5 4-1.5 4m3-11S23 7 23 11.5s-2.5 7-2.5 7"></path>
+                    </g>
+                  </svg></div>
+                <div class="text-block-126">START HEARING NOW</div>
+              </button>
+
+  
+<input type="hidden" name="product-id" value="8577974599959">
+</form>
+
+
+<script>
+  function redirectToCheckout() {
+    fetch('/cart/add.js', {
+      method: 'POST',
+      body: new FormData(document.getElementById('product-form-template--20498569462039__main'))
+    })
+    .then(response => {
+      window.location.href = '/checkout';
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+  }
+</script>

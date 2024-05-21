@@ -1,0 +1,91 @@
+{{ 'custom_product_section.css' | asset_url | stylesheet_tag }}
+
+
+<div class="frame_how_to_use_wrapper">
+  
+ <div class="frame_how_to_use">
+      <div class="div">
+        <p class="how-to-use-them">HOW TO USE OUR HEARING AIDS EFFECTIVELY</p>
+        <p class="text-wrapper">Step-by-Step Guidance for Maximizing the Benefits of Your Hearing Aids</p>
+      </div>
+      <div class="div-2">
+        <div class="div-3" >
+        {% comment %} <div style="position: absolute;">
+<div class="text-wrapper-2" style="position: relative; z-index:999; top:280px; left:122px;"><span>1</span> Step </div>
+        </div> {% endcomment %}
+            
+          <div class="div-4">
+            <img class="rectangle" src="https://cdn.shopify.com/s/files/1/0809/3591/1703/files/1ew123-01.png?v=1697206026" />
+            <div class="div-5" >
+              <div class="text-wrapper-2"><span>1</span> Step </div>
+              <p class="text-wrapper-3">Proper Placement</p>
+            </div>
+          </div>
+          <p class="p">
+            Prior to wearing, thoroughly read the entire manual. When using a Hearing Aid device, begin by positioning the ear hook behind your ear, followed by gently inserting the receiver into your ear canal. 
+             When it's time to take off the device, start by detaching the hook from behind your ear and then carefully removing the dome. 
+             Don't forget to turn off the device when it's not in use.
+          </p>
+
+        </div>
+       
+        <div class="div-3">
+                 
+          <div class="div-4">
+            <img class="rectangle" src="https://cdn.shopify.com/s/files/1/0809/3591/1703/files/1233123123.png?v=1697207461" />
+            <div class="div-5">
+              <div class="text-wrapper-2"> <span>2</span>Step </div>
+              <div class="text-wrapper-3">Adjusting the Settings</div>
+            </div>
+          </div>
+          <p class="p">
+            Press the Volume Up button to increase the volume, and press the Volume Down button to decrease the volume. 
+            Long-press the Volume Up button for 3 seconds to switch between 3 scene modes - Normal mode, Noise cancelling mode, Outdoor mode.
+          </p>
+        </div>
+       
+        <div class="div-6">
+           
+          <div class="div-4">
+            <img class="rectangle" src="https://cdn.shopify.com/s/files/1/0809/3591/1703/files/1ew123-02.png?v=1697206026" />
+            <div class="div-5">
+              <div class="text-wrapper-4"> <span>3</span> Step</div>
+              <div class="text-wrapper-3" >Maintenance and Care</div>
+            </div>
+          </div>
+          <p class="p"> 
+            Extend the lifespan and performance of your hearing aids with proper maintenance and care. Keep the hearing aids clean at all times. 
+       After use, remove the earplug and clean the sound hole with the provided brush. 
+      Wipe off any oil and moisture with tissue paper or a soft cloth, and ensure that the product remains dry. 
+          </p>
+        </div>
+      </div>
+
+      <div class="product-form__buttons">
+                          <button type="submit" onclick="redirectToCheckout(); return false;" id="ProductSubmitButton-template--20498569462039__main" name="add" class="submit-button" aria-haspopup="dialog">
+                          Get CLARI Hearing™ Aids
+                          </button>
+                        </div>
+    </div>
+
+</div>
+
+
+
+
+{% schema %}
+{
+   "name": "How to use section",
+   "settings": [
+   {
+      "type": "liquid",
+      "id": "how_to_use_section",
+      "label": "How to use section",
+      "info": "Add custom How to use section by dkalandadze"
+   }],
+   "presets": [
+   {
+      "name": "How to use section"
+   }]
+}
+{% endschema %}
