@@ -5,7 +5,9 @@
     /* padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px; */
   }
-
+.image-with-text__content > :first-child:is(.image-with-text__heading) {
+    font-size:22px;
+  }
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       /* padding-top: 64px;
@@ -14,12 +16,8 @@
   }
 
 .image-with-text__content > :first-child:is(.image-with-text__heading) {
-    font-size:32px;
+    font-size:22px;
   }
- /* .image-with-text .grid {
-     padding: 85px 48px; 
-     border-radius: 32px;
-  } */
 
   .image-with-text__text p:first-child strong:first-child,
   .image-with-text__text p:first-child strong:nth-child(2){

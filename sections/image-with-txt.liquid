@@ -44,22 +44,50 @@ padding-left:38px;
      border-radius: 32px;
   }
 
+
+      .clearing{
+      font-weight:700;
+       padding-bottom:32px;
+    }
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       /* padding-top: 64px;
       padding-bottom: 54px; */
     }
+
+    .clearing{
+      font-weight:700;
+       padding:60px 0;
+    }
+
   }
 
-.image-with-text__content > :first-child:is(.image-with-text__heading) {
+ h2 strong  {
     font-size:32px;
+   
+  }
+
+    img-mob-wrap{
+    display:none;
+  }
+
+    img-des-wrap{
+    display:block;
+  }
+  @media screen and (max-width: 750px) {
+   
+  img-mob-wrap{
+    display:block;
+  }
+
+    img-des-wrap{
+    display:none;
+  }
+  h2 strong {
+    font-size:22px;
     margin-bottom:32px;
   }
- /* .image-with-text .grid {
-     padding: 85px 48px; 
-     border-radius: 32px;
-  } */
-
+  }
   .image-with-text__text p:first-child strong:first-child,
   .image-with-text__text p:first-child strong:nth-child(2){
 color:#036788
@@ -80,7 +108,7 @@ color:#036788
 <div class="isolate">
   <div class="rich-text content-container color-background-1 gradient rich-text--full-width content-container--full-width section-template--20498569396503__da214b1e-b497-4bfa-87ea-a347335f3f8e-padding">
     <div class="rich-text__wrapper rich-text__wrapper--center page-width">
-      <div class="rich-text__blocks center"><h2 class="rich-text__heading rte inline-richtext h1" style="font-style:700; padding:60px 0;">Why Are CLARI Hearing™ Aids the Preferred Choice <br> for Over 50,000 Satisfied Customers?</h2></div>
+      <div class="rich-text__blocks center" ><h2 class="rich-text__heading rte inline-richtext h1 clearing" >Why Are CLARI Hearing™ Aids the Preferred Choice <br> for Over 50,000 Satisfied Customers?</h2></div>
     </div>
   </div>
 </div>
@@ -108,11 +136,13 @@ color:#036788
               
               </div></section>
     </div>
-    <div class="image-with-text__media-item image-with-text__media-item--medium image-with-text__media-item--top grid__item">
-      <div class="image-with-text__media image-with-text__media--small gradient color-background-1 global-media-settings media"><img src="//fe807f.myshopify.com/cdn/shop/files/Image.png?v=1713211120&amp;width=1500" alt="" srcset="//fe807f.myshopify.com/cdn/shop/files/Image.png?v=1713211120&amp;width=165 165w, //fe807f.myshopify.com/cdn/shop/files/Image.png?v=1713211120&amp;width=360 360w, //fe807f.myshopify.com/cdn/shop/files/Image.png?v=1713211120&amp;width=535 535w, //fe807f.myshopify.com/cdn/shop/files/Image.png?v=1713211120&amp;width=750 750w, //fe807f.myshopify.com/cdn/shop/files/Image.png?v=1713211120&amp;width=1070 1070w, //fe807f.myshopify.com/cdn/shop/files/Image.png?v=1713211120&amp;width=1500 1500w" width="1500" height="1585" loading="lazy" sizes="(min-width: 1400px) 650px,
+    <img class=" img-des-wrap" src="//fe807f.myshopify.com/cdn/shop/files/Image.png?v=1713211120&amp;width=165 165w" alt="" srcset="//fe807f.myshopify.com/cdn/shop/files/Image.png?v=1713211120&amp;width=165 165w, //fe807f.myshopify.com/cdn/shop/files/Image.png?v=1713211120&amp;width=360 360w, //fe807f.myshopify.com/cdn/shop/files/Image.png?v=1713211120&amp;width=535 535w, //fe807f.myshopify.com/cdn/shop/files/Image.png?v=1713211120&amp;width=750 750w, //fe807f.myshopify.com/cdn/shop/files/Image.png?v=1713211120&amp;width=1070 1070w, //fe807f.myshopify.com/cdn/shop/files/Image.png?v=1713211120&amp;width=1500 1500w" width="650" height="1585" loading="lazy" sizes="(min-width: 1400px) 650px,
               (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)">
-</div>
-    </div>
+             
+    {% comment %} <div class="image-with-text__media-item image-with-text__media-item--medium image-with-text__media-item--top grid__item"> {% endcomment %}
+      {% comment %} <div class="image-with-text__media image-with-text__media--small gradient color-background-1 global-media-settings media" >  {% endcomment %}
+{% comment %} </div> {% endcomment %}
+    {% comment %} </div> {% endcomment %}
     
   </div>
 
