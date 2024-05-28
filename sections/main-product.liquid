@@ -293,8 +293,8 @@ div:empty{
   </div>
 
   <div class="product-form__buttons">
-    <!-- Modify the onclick event to call a JavaScript function to set the selected product ID -->
-    <button type="submit" onclick="setSelectedProduct(); return false;" id="ProductSubmitButton-template--20498569462039__main"  name="add" class="product-form__submit button  button--primary" aria-haspopup="dialog" >
+    <!-- Call JavaScript function to handle redirect and product selection -->
+    <button type="button" onclick="handleBuyButtonClick();" class="product-form__submit button  button--primary" aria-haspopup="dialog">
       <span>BUY IT NOW 👉</span>
       <div class="loading-overlay__spinner hidden">
         <svg aria-hidden="true" focusable="false" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
@@ -304,17 +304,7 @@ div:empty{
     </button>
   </div>
 </form>
-
-<script>
-  // JavaScript function to set the selected product ID
-  function setSelectedProduct() {
-    var selectedProductId = document.querySelector('input[name="selected_product"]:checked').value;
-    document.getElementById('selected_product_id').value = selectedProductId;
-    // Submit the form after setting the selected product ID
-    document.getElementById('product-form-template--20498569462039__main').submit();
-  }
-</script> {% endcomment %}
-
+ {% endcomment %}
 
 
 <div class="stars_text-mobile ">
@@ -548,7 +538,7 @@ div:empty{
 
 </div>
           
-            {%- when 'sku' -%}
+            {% comment %} {%- when 'sku' -%}
               <p
                 class="product__sku no-js-hidden{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.sku.size == 0 %} visibility-hidden{% endif %}"
                 id="Sku-{{ section.id }}"
@@ -788,13 +778,57 @@ div:empty{
               {% render 'share-button',
                 block: block,
                 share_link: share_url
-              %}
+              %} {% endcomment %}
+<form method="post" action="/cart/add" id="product-form-template--20498569462039__main" accept-charset="UTF-8" class="form" enctype="multipart/form-data" novalidate="novalidate" data-type="add-to-cart-form">
+  <input type="hidden" name="form_type" value="product">
+  <input type="hidden" name="utf8" value="✓">
+  <!-- Add the selected product ID as a hidden input -->
+  <input type="hidden" name="id" id="selected_product_id" value="">
+  
+  <div class="product-form__choices">
+    <!-- Loop through the products and create radio buttons for each -->
+    {% for product in collections.all.products %}
+      {% if product.type == 'twoPair' or product.type == 'onePair' %}
+        <div class="product">
+          <h2>{{ product.title }}</h2>
+          <p>Price: ${{ product.id }}</p>
+          <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+          <input type="radio" name="selected_product" value="{{ product.id }}">
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
 
-            {%- when 'variant_picker' -%}
-              {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
-            {%- when 'buy_buttons' -%}
-            {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
+  <div class="product-form__buttons">
+    <!-- Call JavaScript function to handle redirect and product selection -->
+    <button type="button" onclick="handleBuyButtonClick();" class="product-form__submit button  button--primary" aria-haspopup="dialog">
+      <span>BUY IT NOW 👉</span>
+      <div class="loading-overlay__spinner hidden">
+        <svg aria-hidden="true" focusable="false" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+          <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+        </svg>
+      </div>
+    </button>
+  </div>
+</form>
 
+<script>
+  // JavaScript function to handle buy button click
+  function handleBuyButtonClick() {
+    // Retrieve the selected product ID
+    var selectedProductId = document.querySelector('input[name="selected_product"]:checked');
+    if (!selectedProductId) {
+      alert('Please select a product.');
+      return;
+    }
+
+    // Set the selected product ID in the hidden input field
+    document.getElementById('selected_product_id').value = selectedProductId.value;
+
+    // Redirect to the checkout page
+    window.location.href = "/checkout?product=" + selectedProductId.value;
+  }
+</script>
 
             
 <div class="frame_payment_icons">
