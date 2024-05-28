@@ -750,11 +750,18 @@
   line-height: normal;
 }
 
+.table-wrap {
+  display: block;
+}
+
 .frame_reasons .div-2 {
   display: none;
 }
 @media screen and (min-width: 800px) {
   .table {
+    display: none;
+  }
+  .table-wrap {
     display: none;
   }
 
